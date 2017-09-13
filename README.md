@@ -27,4 +27,4 @@ textContainer.exclusionPaths = [UIBezierPath.init(rect: rect)]
 
 - `UITextView`默认携带左右边距，通过`UITextView.textContainer.lineFragmentPadding`获取
 - `UITextView`默认携带上下左右边距(`UITextView.textContainerInset`)，其中左右和`lineFragmentPadding`相加
-- 监测是否需要显示`more`的时候，[这个逻辑](https://github.com/madordie/UITextView-More/blob/master/MoreTextView.swift#L22)似乎有点复杂，但是还没找到更好的方案替代。。
+- 监测是否需要显示`more`的时候，[这个逻辑](https://github.com/madordie/UITextView-More/blob/master/MoreTextView.swift#L22-#L34)似乎有点复杂，但是还没找到更好的方案替代。。
