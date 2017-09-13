@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.white
         view.addSubview(text)
 
-        text.frame = CGRect(x: 20, y: 20, width: 150, height: 10)
+        text.frame = CGRect(x: 20, y: 40, width: 150, height: 10)
         text.layer.borderWidth = 1
         text.layer.borderColor = UIColor.gray.cgColor
         text.isEditable = false
