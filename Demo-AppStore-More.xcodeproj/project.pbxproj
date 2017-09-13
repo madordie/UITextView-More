@@ -9,19 +9,17 @@
 /* Begin PBXBuildFile section */
 		3202CDF91F67D471002342ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202CDF81F67D471002342ED /* AppDelegate.swift */; };
 		3202CDFB1F67D471002342ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202CDFA1F67D471002342ED /* ViewController.swift */; };
-		3202CDFE1F67D471002342ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3202CDFC1F67D471002342ED /* Main.storyboard */; };
-		3202CE001F67D471002342ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3202CDFF1F67D471002342ED /* Assets.xcassets */; };
-		3202CE031F67D471002342ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3202CE011F67D471002342ED /* LaunchScreen.storyboard */; };
+		3202CE0B1F67D4DB002342ED /* MoreTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202CE0A1F67D4DB002342ED /* MoreTextView.swift */; };
+		3202CE111F67D8D3002342ED /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3202CE101F67D8D3002342ED /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3202CDF51F67D471002342ED /* Demo-AppStore-More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-AppStore-More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3202CDF81F67D471002342ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3202CDFA1F67D471002342ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3202CDFD1F67D471002342ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3202CDFF1F67D471002342ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3202CE021F67D471002342ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3202CE041F67D471002342ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3202CE0A1F67D4DB002342ED /* MoreTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTextView.swift; sourceTree = "<group>"; };
+		3202CE101F67D8D3002342ED /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +36,7 @@
 		3202CDEC1F67D471002342ED = {
 			isa = PBXGroup;
 			children = (
+				3202CE0A1F67D4DB002342ED /* MoreTextView.swift */,
 				3202CDF71F67D471002342ED /* Demo-AppStore-More */,
 				3202CDF61F67D471002342ED /* Products */,
 			);
@@ -56,9 +55,7 @@
 			children = (
 				3202CDF81F67D471002342ED /* AppDelegate.swift */,
 				3202CDFA1F67D471002342ED /* ViewController.swift */,
-				3202CDFC1F67D471002342ED /* Main.storyboard */,
-				3202CDFF1F67D471002342ED /* Assets.xcassets */,
-				3202CE011F67D471002342ED /* LaunchScreen.storyboard */,
+				3202CE101F67D8D3002342ED /* Launch Screen.storyboard */,
 				3202CE041F67D471002342ED /* Info.plist */,
 			);
 			path = "Demo-AppStore-More";
@@ -122,9 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3202CE031F67D471002342ED /* LaunchScreen.storyboard in Resources */,
-				3202CE001F67D471002342ED /* Assets.xcassets in Resources */,
-				3202CDFE1F67D471002342ED /* Main.storyboard in Resources */,
+				3202CE111F67D8D3002342ED /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,29 +132,11 @@
 			files = (
 				3202CDFB1F67D471002342ED /* ViewController.swift in Sources */,
 				3202CDF91F67D471002342ED /* AppDelegate.swift in Sources */,
+				3202CE0B1F67D4DB002342ED /* MoreTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3202CDFC1F67D471002342ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3202CDFD1F67D471002342ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3202CE011F67D471002342ED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3202CE021F67D471002342ED /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3202CE051F67D471002342ED /* Debug */ = {
@@ -272,9 +249,9 @@
 		3202CE081F67D471002342ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JW6AL86C37;
 				INFOPLIST_FILE = "Demo-AppStore-More/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madordie.Demo-AppStore-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,9 +263,9 @@
 		3202CE091F67D471002342ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JW6AL86C37;
 				INFOPLIST_FILE = "Demo-AppStore-More/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madordie.Demo-AppStore-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
