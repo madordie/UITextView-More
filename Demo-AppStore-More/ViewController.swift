@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let text = MoreTextView()
+    let text = TruncateTextView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +27,14 @@ class ViewController: UIViewController {
         text.font = UIFont.systemFont(ofSize: 12)
         text.isSelectable = false
         text.maxNumberOfLines = 3
-        text.more.font = UIFont.systemFont(ofSize: 12)
+        text.truncateItem.font = UIFont.systemFont(ofSize: 12)
 
         text.text = "这TMD都是啥都是啥都是啥都是啥都是啥都是啥都是啥都是啥都是啥都是啥都是啥都是啥都是啥都是啥。。。"
-        text.more.text = "查看更多"
-        text.more.textColor = UIColor.blue
-        text.more.adjustsFontSizeToFitWidth = true
-        text.more.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showMore)))
-        text.more.isUserInteractionEnabled = true
+        text.truncateItem.text = "查看更多"
+        text.truncateItem.textColor = UIColor.blue
+        text.truncateItem.adjustsFontSizeToFitWidth = true
+        text.truncateItem.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showMore)))
+        text.truncateItem.isUserInteractionEnabled = true
         text.sizeToFit()
     }
     @objc func showMore() {
