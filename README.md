@@ -9,12 +9,14 @@
 ### 获取最后一行Rect
 
 ```swift
-layoutManager.enumerateEnclosingRects(forGlyphRange: NSRange(location: 0, length: textStorage.string.characters.count), withinSelectedGlyphRange: NSRange(location: Int.max, length: 0), in: textContainer, using: { [weak self] (rect, isStop) in
+var lastRect = CGRect.zero
+layoutManager.enumerateEnclosingRects(forGlyphRange: NSRange(location: 0, length: textStorage.string.characters.count), withinSelectedGlyphRange: NSRange(location: NSNotFound, length: 0), in: textContainer, using: { [weak self] (rect, isStop) in
     guard let _self = self else { return }
     var newRect = rect
     newRect.origin.y += _self.textContainerInset.top
-    print(newRect)
+    lastRect = newRect
 })
+print(lastRect)
 ```
 
 ### 增加 `exclusionPaths`
