@@ -2,6 +2,8 @@
 
 使用UITextKit 实现“更多”的折叠效果
 
+[blog](https://madordie.github.io/uitextkit-ellipsis-sth-at-the-end/)
+
 ![预览](https://github.com/madordie/UITextView-More/blob/master/Untitled.gif?raw=true)
 
 ## 主要代码
