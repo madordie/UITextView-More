@@ -43,7 +43,7 @@ public class TruncateTextView: UITextView {
             lastRect = newRect
         })
         truncateItem.frame.origin = CGPoint(x: min(lastRect.maxX, frame.width - truncateItem.frame.width),
-                                    y: lastRect.minY)
+                                    y: lastRect.minY > 0 ? lastRect.minY : lastRect.maxY - truncateItem.frame.height)
         // add more insets
         var rect = truncateItem.frame
         rect.origin.x += truncateItemInsets.left
