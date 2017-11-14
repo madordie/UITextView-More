@@ -2,7 +2,7 @@
 
 使用UITextKit 实现“更多”的折叠效果
 
-[详细文档戳我去blog](https://madordie.github.io/uitextkit-ellipsis-sth-at-the-end/)
+[详细文档戳我去blog](https://madordie.github.io/post/appstore-truncate/)
 
 ![预览](https://github.com/madordie/UITextView-More/blob/master/Untitled.gif?raw=true)
 
