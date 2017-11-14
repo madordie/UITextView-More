@@ -6,6 +6,8 @@
 
 ![预览](https://github.com/madordie/UITextView-More/blob/master/Untitled.gif?raw=true)
 
+PS.换行情况下有毒
+
 ## 主要代码
 
 ### 获取最后一行Rect
