@@ -18,14 +18,28 @@ public class TruncateTextView: UITextView {
             textContainer.lineBreakMode = .byTruncatingTail
         }
     }
-    private var isCanTruncate : Bool {
+    private lazy var mustLabel: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 0
+        return label
+    }()
+    private var isCanTruncate: Bool {
         // - checkout numberOfLines
         guard maxNumberOfLines != 0 else { return false }
         // - checkout number of lines can be fully displayed
         let glyphRange = self.layoutManager.glyphRange(for: self.textContainer)
         guard glyphRange.length != 0 else { return false }
         let truncatedRange = self.layoutManager.truncatedGlyphRange(inLineFragmentForGlyphAt: NSMaxRange(glyphRange) - 1)
-        guard truncatedRange.location != NSNotFound else { return false }
+        if truncatedRange.location == NSNotFound {
+
+            // 遇到部分回车会有问题再次校验
+            let label = mustLabel
+            label.frame = frame
+            label.sizeToFit()
+            if abs(label.frame.height - frame.height) < 8 {
+                return false
+            }
+        }
 
         return true
     }
